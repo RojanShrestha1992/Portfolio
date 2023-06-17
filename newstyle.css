@@ -1,0 +1,494 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Ubuntu', sans-serif;
+}
+/*Scrollbar*/
+::-webkit-scrollbar{
+width: 20px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 1px;
+    background: #4d4d4d;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 10px;
+}
+body{
+/*background: #081b29;*/
+    background: #4B79A1;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #283E51, #4B79A1);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #283E51, #4B79A1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: #ededed;
+}
+.header{
+position: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: #4c4d4a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    
+}
+.logo{
+font-size: 25px;
+color: #ededed;
+text-decoration: none;
+    overflow: hidden;
+
+font-weight: 600;
+}
+
+.stick{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align:right;
+/*        background: #60645a;*/
+}
+.menu-btn{
+color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+ .close-btn{
+        display: none;
+        z-index: 999;
+        font-size: 5rem;
+    }
+.navbar a{
+font-size: 18px;
+color: #ededed;
+text-decoration: none;
+font-weight: 500;
+margin-left: 35px;
+}
+.navbar a:hover{
+color: cyan;
+    border-bottom: 1.5px solid cyan;
+}
+
+.home{
+    margin-top: -1px;
+height: 100vh;
+display: flex;
+align-items: center;
+padding: 0 10%;
+}
+.home-content{
+max-width: 600px;
+}
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+}
+.home-content h3{
+    margin-top: 10px;
+    margin-bottom: 3px;
+font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+}
+.home-content p{
+font-size: 16px;
+text-align: justify;
+}
+.home-content .btn-box{
+    margin-top: 10px;
+    width 345px;
+    justify-content: space-between;
+    height: 50px;
+/*    background: yellowgreen;*/
+}
+.profile{
+    background: url('ram.png');
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    z-index: -100;
+/*    border: 2px solid red;*/
+}
+
+.btn-box a{
+    display: inline-flex;
+    width: 150px;
+    height: 100%;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #00abf0;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.btn-box a:hover{
+color: white;
+    background: #00abf0;
+}
+
+.media-icons{
+position: absolute;
+transform: translateY(20rem);
+/*bottom: 40px;*/
+    width: 250px;
+    display: flex;
+}
+.media-icons a i{
+color: white;
+}
+.media-icons a{
+display: inline-flex;
+    width: 40px;
+    justify-content: center;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    text-decoration: none;
+    
+}
+.media-icons a:hover{
+background: #00abf0;
+}
+
+.about{
+    margin-top: -80px;
+    height: 100vh;
+display: flex;
+align-items: center;
+padding: 0 10%;
+}
+.about-content{
+max-width: 600px;
+    text-align: justify;
+    line-height: 1.5;
+}
+.about-form{
+    margin-left: 15%;
+}
+.about-form h3{
+margin-left: 9px;
+}
+.about-form form input{
+    font-size: 15px;
+    color:#00abf0;
+display: block;
+    padding: 18px 70px;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #00abf0;
+    margin: 9px;
+    background: transparent;
+    transition: 1s ease all;
+    text-align: left;
+    
+}
+.textarea{
+height: 9rem;
+}
+
+::placeholder{
+color: #00abf0;
+    font-size: 
+}
+.about-form form input:focus{
+/*    width: 253px;*/
+    border: 2px solid blue;
+    transition: 1s ease;
+    
+}
+.about-form button{
+padding: 10px 12px;
+    border-radius: 5px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    color: #00abf0;
+    margin-left: 7px;
+    font-weight: 500;
+    font-size: 19px;
+}
+.about-form button:hover{
+    background: #00abf0;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.myWork{
+max-width: 1282px;
+    margin: auto;
+}
+.row{
+margin: 8px -16px;
+}
+.row > .column{
+    padding: 20px;
+}
+.column{
+    float: left;
+    width: 50%;
+/*    border: 2px solid red;*/
+    margin 5px;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.myWork-content{
+    background-color: gray;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .25s ease;
+}
+.column:hover{
+filter: drop-shadow(0 0 0.75rem #4bcdeb);
+}
+
+.footer{
+/*        margin-top: -1px;*/
+    background: #1c1a1a;
+height: 30vh;
+
+display: flex;
+    border: 2px solid black;
+/*align-items: center;*/
+padding: 0 10%;
+}
+.footer-content h1{
+    margin-bottom: 13px;
+}
+.footer-content, .footer-social-links{
+margin-top: 5%;
+}
+.footer-social-links{
+    margin-left: 15%;
+    
+    
+}
+.footer-social-links h3{
+margin-bottom: 13px;
+}
+.footer-social-links a{
+    margin: 43px;
+    color: white;
+    margin-top: 10px;
+    margin-left: -20px;
+}
+
+/*
+.copyright{
+    position: relative;
+display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    flex: 0;
+}
+*/
+hr{
+/*    margin-top: 10px;*/
+    width: 90%;
+    margin: auto;
+}
+.copyright h4{
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+
+
+
+@media (max-width:990px){
+    
+    .menu-btn{
+        display: block;
+        z-index: 999;
+        font-size: 5rem;
+    }
+   
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .header .navbar{
+        position: fixed;
+        height: 102vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align:center;
+        padding-top:80px;
+        transition: .5s ease all;
+        z-index: 999;
+        
+    }
+    .header .navbar a{
+        display: block;
+        text-align:center;
+        align-items: center;
+        margin: 10%;
+        font-size: 4rem;
+    }
+    .header .nabvar .active{
+        left: 0;
+    }
+    .home{
+    display: block;
+        padding: 0 15%;
+
+    }
+    .home-content{
+/*        border: 2px solid red;*/
+        margin-top: 250px;
+    }
+    .home-content h1{
+        font-size: 8rem;
+    }
+    .home-content h3{
+        font-size: 5rem;
+    }
+    .home-content p{
+        font-size: 3rem;
+    }
+    .btn-box a{
+/*        width: 500px;*/
+        height: 140%;
+        font-size: 1.5rem;
+        margin-bottom: 50px;
+    }
+    .media-icons{
+/*        bottom:47rem;*/
+        width: 300px;
+    }
+    .media-icons a{
+        width: 46px;
+            padding: 33px 33px;
+    }
+    .profile{
+        margin-top: 27rem;
+        height: 40%;
+        position: relative;
+        
+    }
+    .about{
+       
+        display: block;
+        margin-top: 38rem;
+        }
+    .about-content h1{
+        font-size: 5rem;
+    }
+    .about-content p{
+        font-size: 2rem;
+         width: 100%;
+    }
+    .about-form{
+        margin-top: 10%;
+                left: -44px;
+        position: absolute;
+
+    }
+    .about-form h3{
+        font-size: 4rem;
+    }
+    .about-form form input{
+    font-size:2rem;
+    padding: 28px 120px; 
+    margin: 29px;
+    }   
+    .about-form button{
+padding: 10px 12px;
+    position: absolute;
+    left: 20px;   
+    font-size: 4rem;
+}
+    ::placeholder{
+color: #00abf0;
+    font-size: 3rem;
+}
+    .column{
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        display: block;
+        margin-left: 9%;
+    }
+    .myWork-content h3, .myWork h1{
+    font-size: 3rem;
+        text-align: center;
+}
+    .myWork-content p{
+    font-size: 2rem;
+}
+    .myWork{
+        
+        margin-top: 70%;
+    }
+    .footer{
+        display: block;
+    }
+   .footer .footer-content h1{
+        font-size:4rem;
+    }
+    .footer .footer-content p,h3,a{
+        font-size: 2rem;
+    }
+    .footer .footer-social-links{
+        margin-left: 0;
+    }
+
+
+
+
+
+
